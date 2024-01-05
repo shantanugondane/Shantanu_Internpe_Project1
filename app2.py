@@ -6,9 +6,7 @@ import pickle
 from streamlit_option_menu import option_menu
 
 
-data = pd.read_csv(
-    "D:/face mask detector/January-AI-ML-Internship/Internship Kartik/diabetes (1).csv"
-)
+data = pd.read_csv("D:/face mask detector/Shantanu_Internpe_Project1/diabetes (1).csv")
 
 loaded_model = pickle.load(open("Diabetesmodel.pkl", "rb"))
 
@@ -113,7 +111,7 @@ if selected == "Contribute to Dataset":
         }
         to_add = pd.DataFrame(to_add)
         to_add.to_csv(
-            "D:/face mask detector/January-AI-ML-Internship/Internship Kartik/diabetes (1).csv",
+            "D:/face mask detector/Shantanu_Internpe_Project1/diabetes (1).csv",
             mode="a",
             header=False,
             index=False,
