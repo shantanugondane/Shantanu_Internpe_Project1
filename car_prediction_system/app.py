@@ -339,7 +339,7 @@ if selected == "Predict Price":
 
 
 if selected == "About":
-    st.image("image-sell-car.jpg")
+    st.image("car.jpg")
     st.header("What is Car Price Prediction System?")
 
     st.write(
